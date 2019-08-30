@@ -24,7 +24,6 @@ namespace DatingApp.API.Controllers
         public async Task<ActionResult> GetValues()
         {
             var values = await _context.Values.ToListAsync(); 
-            var res="";
             return Ok(values);
         }
 
